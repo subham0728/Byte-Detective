@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img" aria-label="Starry treasure map scene">
+  <rect width="700" height="420" fill="#1d224f"/>
+  <circle cx="580" cy="70" r="42" fill="#ffe38b"/>
+  <g fill="#fff5b5">
+    <circle cx="120" cy="80" r="5"/>
+    <circle cx="200" cy="140" r="4"/>
+    <circle cx="90" cy="180" r="5"/>
+    <circle cx="470" cy="110" r="4"/>
+    <circle cx="620" cy="180" r="5"/>
+    <circle cx="330" cy="80" r="5"/>
+    <circle cx="520" cy="260" r="5"/>
+    <circle cx="260" cy="230" r="4"/>
+  </g>
+  <g transform="translate(115 80)">
+    <path d="M180 0 L220 110 L330 110 L245 175 L285 290 L180 220 L75 290 L115 175 L30 110 L140 110 Z" fill="#fff3a2" opacity="0.9"/>
+    <path d="M178 115 L180 232" stroke="#ffd166" stroke-width="5"/>
+    <path d="M100 160 L255 160" stroke="#ffd166" stroke-width="5"/>
+    <path d="M180 84 L180 258" stroke="#ffd166" stroke-width="5"/>
+  </g>
+  <g transform="translate(150 260)">
+    <path d="M0 70 L70 20 L160 70 L70 120 Z" fill="#7ac4ff" stroke="#4d8fe3" stroke-width="5"/>
+    <circle cx="70" cy="73" r="8" fill="#fff7d2"/>
+  </g>
+</svg>

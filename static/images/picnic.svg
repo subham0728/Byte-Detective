@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img" aria-label="Picnic basket scene">
+  <rect width="700" height="420" fill="#dff9ff"/>
+  <path d="M0 285 Q150 245 260 285 T700 285 L700 420 L0 420 Z" fill="#bfe9a7"/>
+  <g transform="translate(190 90)">
+    <path d="M50 120 L340 120 L300 260 L90 260 Z" fill="#d58a5e" stroke="#a7683d" stroke-width="6"/>
+    <path d="M120 120 L80 260 L90 260 L130 120 Z" fill="#c67749"/>
+    <path d="M300 120 L260 260 L270 260 L320 120 Z" fill="#c67749"/>
+    <path d="M95 120 L305 120" stroke="#9e5e38" stroke-width="6"/>
+    <path d="M105 170 L285 170" stroke="#9e5e38" stroke-width="6"/>
+    <path d="M135 120 L135 260" stroke="#9e5e38" stroke-width="6"/>
+    <path d="M205 120 L205 260" stroke="#9e5e38" stroke-width="6"/>
+    <path d="M275 120 L275 260" stroke="#9e5e38" stroke-width="6"/>
+  </g>
+  <g fill="#f7cf57">
+    <circle cx="170" cy="150" r="24"/>
+    <circle cx="240" cy="120" r="20"/>
+    <circle cx="510" cy="150" r="22"/>
+    <circle cx="570" cy="135" r="24"/>
+  </g>
+  <g fill="#ff9f72">
+    <circle cx="120" cy="225" r="18"/>
+    <circle cx="580" cy="220" r="17"/>
+    <circle cx="500" cy="252" r="18"/>
+  </g>
+  <g transform="translate(70 45)">
+    <path d="M0 70 C25 40 70 35 90 70 C70 90 40 100 0 70 Z" fill="#ffb7c9"/>
+    <circle cx="27" cy="52" r="10" fill="#fff"/>
+    <circle cx="61" cy="52" r="10" fill="#fff"/>
+    <path d="M18 77 Q44 92 70 77" stroke="#e76d88" stroke-width="5" fill="none"/>
+  </g>
+</svg>

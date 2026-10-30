@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img" aria-label="Birthday gift scene">
+  <rect width="700" height="420" fill="#fff7d8"/>
+  <circle cx="560" cy="80" r="42" fill="#ffe58a"/>
+  <rect x="0" y="280" width="700" height="140" fill="#bfe7b2"/>
+  <g transform="translate(220 80)">
+    <rect x="70" y="65" width="220" height="190" rx="18" fill="#ff7a7a" stroke="#d95e6a" stroke-width="6"/>
+    <rect x="140" y="0" width="80" height="255" rx="8" fill="#ffd25d" stroke="#e3aa3b" stroke-width="6"/>
+    <rect x="50" y="130" width="260" height="30" rx="8" fill="#ffd25d" stroke="#e3aa3b" stroke-width="6"/>
+    <circle cx="180" cy="180" r="18" fill="#fff"/>
+    <circle cx="230" cy="160" r="16" fill="#fff"/>
+    <circle cx="130" cy="160" r="16" fill="#fff"/>
+    <path d="M180 95 L180 230" stroke="#fff" stroke-width="6"/>
+    <path d="M120 150 L240 150" stroke="#fff" stroke-width="6"/>
+  </g>
+  <g transform="translate(90 200)">
+    <ellipse cx="90" cy="70" rx="50" ry="32" fill="#ffb2bf"/>
+    <circle cx="90" cy="35" r="28" fill="#ffb2bf"/>
+    <circle cx="90" cy="20" r="8" fill="#fff"/>
+    <path d="M60 55 Q90 90 120 55" fill="none" stroke="#ff7ca5" stroke-width="5"/>
+  </g>
+</svg>

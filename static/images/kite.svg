@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img" aria-label="Cute kite shop scene">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff5ff"/>
+      <stop offset="100%" stop-color="#fff9d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="420" fill="url(#sky)"/>
+  <circle cx="560" cy="80" r="38" fill="#ffd66b"/>
+  <path d="M50 340 Q200 260 340 340 T650 340 L650 420 L50 420 Z" fill="#b7e9a8"/>
+  <g transform="translate(120 90)">
+    <path d="M80 0 L150 70 L80 140 L10 70 Z" fill="#ff7e7e" stroke="#d45b63" stroke-width="5"/>
+    <path d="M80 70 L80 180" stroke="#b8d8ff" stroke-width="5"/>
+    <circle cx="80" cy="70" r="7" fill="#fff"/>
+    <path d="M80 180 L120 220" stroke="#8b6bff" stroke-width="5"/>
+    <path d="M80 180 L40 220" stroke="#8b6bff" stroke-width="5"/>
+    <path d="M65 20 L90 55 L115 20" stroke="#fff" stroke-width="4" fill="none"/>
+  </g>
+  <g transform="translate(420 90)">
+    <rect x="0" y="30" width="110" height="80" rx="18" fill="#fff4a8" stroke="#f2c047" stroke-width="4"/>
+    <path d="M18 110 L50 155 L92 110" fill="#ffb3b3" stroke="#d96d6d" stroke-width="4"/>
+    <circle cx="30" cy="58" r="12" fill="#ffb3b3"/>
+    <circle cx="78" cy="58" r="12" fill="#ff9fc4"/>
+    <path d="M30 80 L78 80" stroke="#5a90d8" stroke-width="5"/>
+  </g>
+  <g transform="translate(50 240)">
+    <path d="M25 50 L45 5 L130 50 L45 95 Z" fill="#7ec9ff" opacity="0.9"/>
+    <path d="M45 95 L45 165" stroke="#86c360" stroke-width="6"/>
+    <circle cx="45" cy="170" r="18" fill="#ffd76a"/>
+  </g>
+</svg>

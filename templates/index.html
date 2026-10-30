@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Byte Detective Kids — Learn Python by Solving Mysteries!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="#"><span class="logo-icon">🔎</span><span>BYTE <b>DETECTIVE</b><small>PYTHON MYSTERY CLUB</small></span></a>
+  <div class="top-progress"><span>⭐ YOUR STARS</span><b id="star-count">0</b><span class="star">★</span></div>
+</header>
+<main>
+<section class="welcome" id="welcome">
+ <div class="welcome-copy">
+  <span class="bubble-tag">🕵️ SMALL BUGS... BIG MYSTERIES!</span>
+  <h1>Become a <span>Code Detective!</span></h1>
+  <p>Find the clues, fix funny little bugs, and learn Python while solving mysteries. Ready, detective?</p>
+  <button class="big-button" id="start-btn">LET'S PLAY! <span>➜</span></button>
+  <div class="mini-perks"><span>🐍 Learn Python</span><span>🧩 Solve puzzles</span><span>🏆 Earn stars</span></div>
+ </div>
+ <div class="hero-character"><img src="{{ url_for('static', filename='images/detective.svg') }}" alt="Friendly cartoon detective with magnifying glass"><div class="speech">You can do it!<br>Let's find clues! 💡</div></div>
+</section>
+
+<section class="game-layout" id="game" hidden>
+ <aside class="sidebar">
+  <div class="side-title">🗂️ CASE FILES</div>
+  {% for case in cases %}
+  <button class="case-link {% if loop.first %}selected{% endif %}" data-case="{{case.id}}">
+   <span class="case-emoji">{{case.emoji}}</span><span><b>Case {{case.id}}</b><small>{{case.title}}</small></span><i id="done-{{case.id}}">○</i>
+  </button>
+  {% endfor %}
+  <div class="learn-card"><div>🧠</div><b>Detective Tip!</b><p>Read every clue carefully. A tiny detail can solve a big mystery!</p></div>
+  <div class="star-progress"><b>YOUR PROGRESS</b><div class="bar"><i id="progress-bar"></i></div><small id="progress-text">0 of {{ cases|length }} cases solved</small></div>
+ </aside>
+ <section class="case-area">
+  <div class="case-header"><div><span class="eyebrow">YOUR MISSION</span><h2 id="case-title">The Missing Backpack</h2><p id="case-level">⭐ EASY CASE</p></div><div class="case-badge" id="case-emoji">🎒</div></div>
+  <div class="story-card"><img id="scene" src="{{url_for('static',filename='images/park.svg')}}" alt="Case cartoon scene"><div><span class="eyebrow">📖 THE STORY</span><p id="story"></p></div></div>
+  <div class="clues-title"><h3>🔍 Clue Board</h3><span>Look closely!</span></div>
+  <div class="clues" id="clues"></div>
+  <div class="editor-card">
+   <div class="editor-top"><div><span class="code-icon">🐍</span><b>Python Detective Pad</b><small>Fix the code below</small></div><span class="python-pill">PYTHON</span></div>
+   <div class="editor-help">✏️ Click inside the code and fix the mistake. Don't worry — you can try as many times as you like!</div>
+   <div class="code-wrap"><div class="line-nums" id="line-nums">1<br>2<br>3<br>4<br>5</div><textarea id="code" spellcheck="false" aria-label="Python code editor"></textarea></div>
+   <div class="editor-actions"><button class="soft-button" id="hint-btn">💡 Give me a hint</button><button class="run-button" id="run-btn">▶ CHECK MY CODE!</button></div>
+   <div id="hint" class="hint" hidden></div>
+   <div class="result" id="result"><span>🤖</span><p>I'm ready! Fix the code and press <b>Check My Code</b>.</p></div>
+   <div class="success-card" id="success" hidden><div class="confetti">🎉 ⭐ 🎊 ⭐ 🎉</div><h2>CASE SOLVED!</h2><h3 id="suspect"></h3><p id="explain"></p><button class="next-button" id="next-btn">NEXT MYSTERY ➜</button></div>
+  </div>
+ </section>
+</section>
+<section class="how" id="how">
+ <h2>How to play <span>🧩</span></h2><div class="how-grid">
+  <article><b>1</b><span>📖</span><h3>Read the story</h3><p>Meet the mystery and discover what happened.</p></article>
+  <article><b>2</b><span>🔍</span><h3>Find the clues</h3><p>Look for hints that help you spot the bug.</p></article>
+  <article><b>3</b><span>🐍</span><h3>Fix the Python</h3><p>Change the code and check your answer.</p></article>
+  <article><b>4</b><span>🏆</span><h3>Earn a star!</h3><p>Solve the case and become a coding hero.</p></article>
+ </div>
+</section>
+</main>
+<footer>Made for curious minds 💛 <span>Little bugs → Big thinkers → Future coders!</span></footer>
+<script src="{{url_for('static',filename='js/game.js')}}"></script>
+</body></html>
